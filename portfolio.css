@@ -26,7 +26,7 @@ header {
 body {
   margin: 0;
   background-color: var(--green-blue);
-  background-image: url("images/Background2.jpg");
+  background-image: url("/Users/grace/Desktop/Personal/Website/Background2.jpg");
   background-repeat: repeat;
   background-size: auto;
 }
@@ -107,9 +107,9 @@ h3 {
 
 .anchor-offset {
   display: block;
-  height: var(--nav-h);                /* push the element down */
-  margin-top: calc(-1 * var(--nav-h));/* pull the anchor itself back up */
-  visibility: hidden;                  /* keep it invisible */
+  height: var(--nav-h);                
+  margin-top: calc(-1 * var(--nav-h));
+  visibility: hidden;                  
 }
 
 section {
@@ -122,6 +122,10 @@ section {
   padding-bottom: 60px;
 }
 
+html {
+  scroll-padding-top: 150px;
+}
+
 .image1 {
   max-width: 50%;
   height: auto;
@@ -131,10 +135,95 @@ section {
   padding-bottom: 20px;
 }
 
+.image2 {
+  max-width: 50%;
+  height: auto;
+  float: right;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.image3 {
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.image4 {
+  max-width: 60%;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+}
+
 a {
   color: var(--green-blue)
+}
+    
+@media (max-width: 600px) {
+  img {
+    max-width: 300px; /* shrink image */
+      }
+    }
+
+@media (max-width: 400px) {
+  img {
+    max-width: 200px; /* shrink even more */
+      }
+    }
+
+.subtitle {
+  color: var(--green-blue);
+}
+
+.cert {
+  background-color: var(--deep-black);
+  padding: 0.5em;
+  float: right;
+  border-radius: 8px;
+}
+
+.poster {
+  background-color: var(--deep-black);
+  padding: 0.5em;
+  border-radius: 8px;
+  float: right;
+  margin: 0 0 30px 30px;
+}
+
+.spaceholder {
+  width: 100%;
+  height: 50px;
+  color: var(--background);
+}
+
+.certLink, .posterLink {
+  color: var(--background);
+  text-decoration: none;
 }
 
 * {
   scroll-behavior: smooth;
 }
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: right;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: var(--deep-black);
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--green-blue);
+}
+
